@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Icon Font-->
+  <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="../css/design.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="../css/customer-account.css" media="screen,projection" />
+
+  <!--Import fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TODO: SEO: Title, description, etc. -->
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="fixed inverse">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">
+            <img alt="cup society logo" src="../assets/images/logo-white.png">
+          </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile-pagelinks" class="left hide-on-med-and-down">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product-overview.html">Produkte</a></li>
+        <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
+      </ul>
+      <ul id="nav-mobile-cart" class="right">
+        <li><a id="cart-btn"><i class="material-icons">shopping_cart</i></a></li>
+      </ul>
+      <ul id="nav-mobile-login" class="right hide-on-med-and-down">
+        <li><a href="./login.html">Konto</a></li>
+      </ul>
+
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product-overview.html">Produkte</a></li>
+        <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
+        <hr class="fullWidth">
+        <li><a href="./login.html">Konto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- !NAVBAR -->
+
+  <!-- CART -->
+  <div class="cart-container primary-bg-white fixed right">
+    <div class="cart-container-header">
+      <h4 class="cart-heading h4 primary-textcolor">Warenkorb</h4>
+      <a id="close-cart-btn"><i class="material-icons secondary-textcolor">close</i></a>
+    </div>
+    <div class="cart-element-wrapper">
+
+      <!-- cart-element -->
+      <div class="cart-element hoverable z-depth-2 secondary-textcolor">
+        <img class="cart-productimg" src="../assets/images/test-product-img.png" alt="produktbild">
+        <p class="cart-product-description secondary-textcolor">
+          <span class="cart-amount-description">1x</span>
+          <span class="cart-name-description">Green Label - Zitrone & Ingwer</span>
+        </p>
+        <p class="cart-price center-align">9,99 &euro;</p>
+        <i class="delete-cartitem material-icons secondary-textcolor pointer">close</i>
+      </div>
+      <!-- /cart-element -->
+
+      <!-- cart-element -->
+      <div class="cart-element hoverable z-depth-2 black-text">
+        <img class="cart-productimg" src="../assets/images/test-product-img.png" alt="produktbild">
+        <p class="cart-product-description secondary-textcolor">
+          <span class="cart-amount-description">1x</span>
+          <span class="cart-name-description">Green Label - Zitrone & Ingwer</span>
+        </p>
+        <p class="cart-price center-align">9,99 &euro;</p>
+        <i class="delete-cartitem material-icons secondary-textcolor pointer">close</i>
+      </div>
+      <!-- /cart-element -->
+    </div>
+
+    <hr class="fullWidth">
+    <p class="cart-sum h4 primary-textcolor">Summe:<span class="right">9,99 &euro;</span></p>
+    <a class="btn waves-effect primary-btn btn-large rounded-btn">Zur Kasse</a>
+
+  </div>
+
+  <div class="open-cart-overlay primary-bg-green"></div>
+  <!-- !CART -->
+
+  <!-- CONTENT -->
+  <section class="content-section-inner center-align valign-wrapper fullscreenHeight">
+    <div class="container">
+      <div class="row">
+        <div class="section-heading col s12">
+          <h4>Willkommen</h4>
+          <h2>Max Mustermann</h2>
+          <div class="divider"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <ul class="collapsible" data-collapsible="accordion">
+            <!-- Bestellungen -->
+            <li>
+              <div class="collapsible-header"><i class="material-icons">bookmark</i>Bestellungen<span class="new badge primary-btn" data-badge-caption="">1</span></div>
+              <div class="collapsible-body">
+                <!-- for every order; first one is active -->
+                <div class="row">
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header">
+                        <p class="fullWidth no-margin">
+                          <span class="left valign-wrapper"><i class="fa fa-hashtag" aria-hidden="true"></i>1001</span>
+                          <span class="right">Versandstatus: versandt</span>
+                        </p>
+                      </div>
+                      <div class="collapsible-body">
+                        <!-- Deliveryaddress -->
+                        <p>Die Bestellung vom 11.12.2017 wird/wurde an Max Mustermann, in die Musterstr. 17 in Musterstadt gesendet.</p>
+                        <div class="order-element-wrapper">
+                          <!-- loop every element in the order -->
+                          <div class="order-element hoverable z-depth-2">
+                            <img src="../assets/images/test-product-img.png" alt="product">
+                            <p class="product-info">1x Green Label - Zitrone Ingwer<span class="right">9,99 &euro;</span></p>
+                          </div>
+
+                          <div class="order-element hoverable z-depth-2">
+                            <img src="../assets/images/test-product-img.png" alt="product">
+                            <p class="product-info">1x Teeflasche mit Infusor<span class="right">29,99 &euro;</span></p>
+                          </div>
+                        </div>
+                        <!-- Costoverview -->
+                        <ul class="collection order-sum-collection">
+                          <li class="collection-item">
+                            <p class="left-align no-margin">Zwischensumme:<span class="right">39,98 &euro;</span></p>
+                          </li>
+                          <li class="collection-item">
+                            <p class="left-align no-margin">MwSt.:<span class="right">5,00 &euro;</span></p>
+                          </li>
+                          <li class="collection-item">
+                            <p class="left-align no-margin">Versand:<span class="right">4,50 &euro;</span></p>
+                          </li>
+                          <p class="left-align no-margin">Summe:<span class="right">49.48 &euro;</span></p>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- !Bestellungen -->
+
+            <!-- Adressen -->
+            <li>
+              <div class="collapsible-header"><i class="material-icons">home</i>Adressen</div>
+              <div class="collapsible-body">
+                <div class="row">
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">home</i>Zu Hause</div>
+                      <div class="collapsible-body">
+                        <div id="overview_address_panel-1" class="row">
+                          <div class="address_overview_outputfield col s6">
+                            <p id="first_name_output_1">Max</p>
+                            <span class="col">Vorname</span>
+                          </div>
+                          <div class="address_overview_outputfield col s6">
+                            <p id="last_name_output_1">Mustermann</p>
+                            <span class="col">Nachname</span>
+                          </div>
+                          <div class="address_overview_outputfield col s8">
+                            <p id="street_output_1">Musterstr.</p>
+                            <span class="col">Stra&szlig;e</span>
+                          </div>
+                          <div class="address_overview_outputfield col s4">
+                            <p id="hnumber_output_1">17</p>
+                            <span class="col">Hausnr.</span>
+                          </div>
+                          <div class="address_overview_outputfield col s12 m6">
+                            <p id="address_plus_output_1">4. Etage</p>
+                            <span class="col">Adresszusatz (z.B. Etage) optional</span>
+                          </div>
+                          <div class="address_overview_outputfield col s12 m6">
+                            <p id="location_output_1">Musterstadt</p>
+                            <span class="col">Stadt</span>
+                          </div>
+                          <div class="address_overview_outputfield col s12">
+                            <p id="telephone_output_1">nicht angegeben</p>
+                            <span class="col">Telefonnummer (optional)</span>
+                          </div>
+
+                          <div class="col s12 left-align btn_group">
+                            <a id="edit_address_btn-1" class="btn waves-effect waves-light primary-btn" onclick="toggleHidness('#overview_address_panel-1','#edit_address_panel-1');">Bearbeiten</a>
+                            <a id="delete_address_btn-1" class="btn waves-effect waves-light primary-btn">L&ouml;schen</a>
+                          </div>
+                        </div>
+
+                        <div id="edit_address_panel-1" class="row hide">
+                          <div class="input-field col s6">
+                            <input required id="first_name" type="text" class="validate">
+                            <label for="first_name">Vorname</label>
+                          </div>
+                          <div class="input-field col s6">
+                            <input required id="last_name" type="text" class="validate">
+                            <label for="last_name">Nachname</label>
+                          </div>
+
+                          <div class="input-field col s8">
+                            <input required id="street" type="text" class="validate">
+                            <label for="street">Stra&szlig;e</label>
+                          </div>
+                          <div class="input-field col s4">
+                            <input required id="hnumber" type="text" class="validate">
+                            <label for="hnumber">Hausnr.</label>
+                          </div>
+
+                          <div class="input-field col s12 m6">
+                            <input id="address_plus" type="text" class="validate">
+                            <label for="address_plus">Adresszusatz (z.B. Etage) optional</label>
+                          </div>
+                          <div class="input-field col s12 m6">
+                            <input required id="location" type="text" class="validate">
+                            <label for="location">Stadt</label>
+                          </div>
+
+                          <div class="input-field col s12">
+                            <input id="telephone" type="tel" class="validate">
+                            <label for="telephone">Telefonnummer (optional)</label>
+                          </div>
+                          <div class="col s12 left-align btn_group">
+                            <a id="update_address_btn-1" class="btn waves-effect waves-light primary-btn" onclick="toggleHidness('#edit_address_panel-1','#overview_address_panel-1');">Aktualisieren</a>
+                            <a id="cancel_address_btn-1" class="btn waves-effect waves-light primary-btn" onclick="toggleHidness('#edit_address_panel-1','#overview_address_panel-1');">Abbrechen</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header active"><i class="material-icons">home</i>Neue Adresse hinzuf&uuml;gen</div>
+                      <div class="collapsible-body">
+                        <div class="row">
+                          <form class="col s12" method="post">
+                            <div class="row">
+                              <div class="input-field col s6">
+                                <input required id="first_name" type="text" class="validate">
+                                <label for="first_name">Vorname</label>
+                              </div>
+                              <div class="input-field col s6">
+                                <input required id="last_name" type="text" class="validate">
+                                <label for="last_name">Nachname</label>
+                              </div>
+
+                              <div class="input-field col s8">
+                                <input required id="street" type="text" class="validate">
+                                <label for="street">Stra&szlig;e</label>
+                              </div>
+                              <div class="input-field col s4">
+                                <input required id="hnumber" type="text" class="validate">
+                                <label for="hnumber">Hausnr.</label>
+                              </div>
+
+                              <div class="input-field col s12 m6">
+                                <input id="address_plus" type="text" class="validate">
+                                <label for="address_plus">Adresszusatz (z.B. Etage) optional</label>
+                              </div>
+                              <div class="input-field col s12 m6">
+                                <input required id="location" type="text" class="validate">
+                                <label for="location">Stadt</label>
+                              </div>
+
+                              <div class="input-field col s12">
+                                <input id="telephone" type="tel" class="validate">
+                                <label for="telephone">Telefonnummer (optional)</label>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col s12 left-align btn_group">
+                                <button class="btn waves-effect waves-light primary-btn" type="submit" name="action">
+                                          Hinzuf&uuml;gen
+                                        </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- !Adressen -->
+
+            <!-- Einstellungen -->
+            <li>
+              <div class="collapsible-header"><i class="material-icons">settings</i>Einstellungen</div>
+              <div class="collapsible-body">
+                <div class="row">
+                  <div class="col s12 btn_group">
+                    <a class="btn primary-btn">Passwort zuruecksetzen</a>
+                    <a class="btn primary-btn">Support kontaktieren</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- !Einstellungen -->
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 btn_group">
+          <a href="./index.html" class="btn primary-btn col m6 offset-m3">Ausloggen</a>
+        </div>
+      </div>
+
+      <!-- Support -->
+      <div class="hide-on-med-and-down">
+        <!-- Element Showed -->
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+          <a id="menu" class="btn btn-floating btn-large primary-bg-green" onclick="$('.tap-target').tapTarget('open');"><i class="material-icons">feedback</i></a>
+        </div>
+
+        <!-- Tap Target Structure -->
+        <div class="tap-target primary-container" data-activates="menu">
+          <div class="tap-target-content">
+            <h5>Sie haben Fragen?</h5>
+            <p>Kontaktieren Sie und einfach &uuml;ber support@cupsociety.de<br><br>Ihr Cup Society Team</p>
+          </div>
+        </div>
+      </div>
+      <!-- !Support -->
+    </div>
+  </section>
+  <!-- !CONTENT -->
+
+  <!-- FOOTER -->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <img alt="cup society logo" src="../assets/images/logo-white.png" class="footer-logo" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center-align footer-social">
+          <a href="https://www.facebook.com/cupsocietyde/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/cupsocietyde/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <hr class="fullWidth ">
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer-menu col s12">
+          <p class="col s6 m3 center-align"><a href="./index.html" class="primary-hoverable">Startseite</a></p>
+          <p class="col s6 m3 center-align"><a href="" class="primary-hoverable">Produkte</a></p>
+          <p class="col s6 m3 center-align"><a href="" class="primary-hoverable">&Uuml;ber uns</a></p>
+          <p class="col s6 m3 center-align"><a href="./login.html" class="primary-hoverable">Konto</a></p>
+        </div>
+        <div class="footer-secure col s12">
+          <p class="col s6 m3 offset-m3 center-align"><a href="http://datenschutz.cupsociety.de" target="_blank" class="primary-hoverable pointer">Datenschutz</a></p>
+          <p class="col s6 m3 center-align"><a href="http://impressum.cupsociety.de" target="_blank" class="primary-hoverable pointer">Impressum</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row no-margin center-align">
+          <span class="col s6">© 2018 Copyright Cup Society</span>
+          <span class="col s6">Made with <i style="color:#ed4956" class="fa fa-heart" aria-hidden="true"></i> in Germany</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- !FOOTER -->
+
+  <!--Import jQuery before materialize.../js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/scrollreveal-master/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="../js/reveal-custom.js"></script>
+  <script type="text/javascript" src="../js/svgcolorchanger.js"></script>
+  <script type="text/javascript" src="../js/cart.js"></script>
+  <script type="text/javascript" src="../js/custom.js"></script>
+</body>
+
+</html>
