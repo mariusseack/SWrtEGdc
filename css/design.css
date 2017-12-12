@@ -680,6 +680,10 @@ footer {
   margin-top: 200px;
 }
 
+footer a{
+  color: #fefefe;
+}
+
 .footer-copyright>.container>a{
   margin: auto 1rem;
 }

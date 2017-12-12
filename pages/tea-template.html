@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Icon Font-->
+  <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="../css/design.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="../css/tea-design.css" media="screen,projection" />
+
+  <!--Import fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TODO: SEO: Title, description, etc. -->
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="fixed inverse">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">
+            <img alt="cup society logo" src="../assets/images/logo-white.png">
+          </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile-pagelinks" class="left hide-on-med-and-down">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product-overview.html">Produkte</a></li>
+        <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
+      </ul>
+      <ul id="nav-mobile-cart" class="right">
+        <!-- hidden on mobile and when cart is empty -->
+        <li><a id="cart-btn"><i class="material-icons">shopping_cart</i><span class="new badge primary-bg-white secondary-textcolor primary-hoverable-bg hide-on-small-only" data-badge-caption="">2</span></a></li>
+      </ul>
+      <ul id="nav-mobile-login" class="right hide-on-med-and-down">
+        <li><a href="./login.html"><i class="material-icons white-textcolor">person</i>Anmelden</a></li>
+      </ul>
+
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product-overview.html">Produkte</a></li>
+        <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
+        <li><a href="./login.html">Anmelden</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- !NAVBAR -->
+
+  <!-- CART -->
+  <div class="cart-container primary-bg-white fixed right">
+    <div class="cart-container-header">
+      <h4 class="cart-heading h4 primary-textcolor">Warenkorb</h4>
+      <a id="close-cart-btn"><i class="material-icons secondary-textcolor">close</i></a>
+    </div>
+    <div class="cart-element-wrapper">
+
+      <!-- cart-element -->
+      <div class="cart-element hoverable z-depth-2 secondary-textcolor">
+        <img class="cart-productimg" src="../assets/images/test-product-img.png" alt="produktbild">
+        <p class="cart-product-description secondary-textcolor">
+          <span class="cart-amount-description">1x</span>
+          <span class="cart-name-description">Green Label - Zitrone & Ingwer</span>
+        </p>
+        <p class="cart-price center-align">9,99 &euro;</p>
+        <i class="delete-cartitem material-icons secondary-textcolor pointer">close</i>
+      </div>
+      <!-- /cart-element -->
+
+      <!-- cart-element -->
+      <div class="cart-element hoverable z-depth-2 black-text">
+        <img class="cart-productimg" src="../assets/images/test-product-img.png" alt="produktbild">
+        <p class="cart-product-description secondary-textcolor">
+          <span class="cart-amount-description">1x</span>
+          <span class="cart-name-description">Green Label - Zitrone & Ingwer</span>
+        </p>
+        <p class="cart-price center-align">9,99 &euro;</p>
+        <i class="delete-cartitem material-icons secondary-textcolor pointer">close</i>
+      </div>
+      <!-- /cart-element -->
+    </div>
+
+    <hr class="fullWidth">
+    <p class="cart-sum h4 primary-textcolor">Summe:<span class="right">9,99 &euro;</span></p>
+    <a class="btn waves-effect primary-btn btn-large rounded-btn">Zur Kasse</a>
+
+  </div>
+
+  <div class="open-cart-overlay primary-bg-green"></div>
+  <!-- !CART -->
+
+  <!-- CONTENT -->
+
+  <section class="tea-template-header">
+    
+  </section>
+  <!-- !CONTENT -->
+
+  <!-- FOOTER -->
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <img alt="cup society logo" src="../assets/images/logo-white.png" class="footer-logo" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 center-align footer-social">
+          <a href="https://www.facebook.com/cupsocietyde/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/cupsocietyde/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <hr class="fullWidth ">
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer-menu col s12">
+          <p class="col s6 m3 center-align"><a href="./index.html" class="primary-hoverable">Startseite</a></p>
+          <p class="col s6 m3 center-align"><a href="" class="primary-hoverable">Produkte</a></p>
+          <p class="col s6 m3 center-align"><a href="" class="primary-hoverable">&Uuml;ber uns</a></p>
+          <p class="col s6 m3 center-align"><a href="./login.html" class="primary-hoverable">Konto</a></p>
+        </div>
+        <div class="footer-secure col s12">
+          <p class="col s6 m3 offset-m3 center-align"><a href="http://datenschutz.cupsociety.de" target="_blank" class="primary-hoverable pointer">Datenschutz</a></p>
+          <p class="col s6 m3 center-align"><a href="http://impressum.cupsociety.de" target="_blank" class="primary-hoverable pointer">Impressum</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row no-margin center-align">
+          <span class="col s6">© 2018 Copyright Cup Society</span>
+          <span class="col s6">Made with <i style="color:#ed4956" class="fa fa-heart" aria-hidden="true"></i> in Germany</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- !FOOTER -->
+
+  <!--Import jQuery before materialize.../js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/instafeed.min.js"></script>
+  <script type="text/javascript" src="../js/scrollreveal-master/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="../js/reveal-custom.js"></script>
+  <script type="text/javascript" src="../js/cart.js"></script>
+  <script type="text/javascript" src="../js/home-product-slideshow.js"></script>
+  <script type="text/javascript" src="../js/custom.js"></script>
+</body>
+
+</html>
