@@ -102,10 +102,6 @@ a, .btn, .pointer {
   cursor: pointer;
 }
 
-a{
-  color: white;
-}
-
 .right-btn-icon {
   margin-left: 15px;
 }
