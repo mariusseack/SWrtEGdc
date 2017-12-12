@@ -138,6 +138,10 @@ a{
   padding: 0 !important;
 }
 
+.btn_group .btn{
+  width: 100%;
+}
+
 img {
   pointer-events: none;
 }
@@ -574,7 +578,7 @@ body>nav, body>section {
   transition: top 300ms ease-in-out;
 }
 
-.product-element>.product-information:hover {
+.product-element:hover > .product-information {
   -webkit-transition: top 300ms ease-in-out;
   -moz-transition: top 300ms ease-in-out;
   -o-transition: top 300ms ease-in-out;
@@ -768,6 +772,10 @@ footer {
   .social-link {
     letter-spacing: 0px;
     font-weight: 100;
+  }
+  .btn_group .btn{
+    margin-top: 5px;
+    width: 100%;
   }
 }
 

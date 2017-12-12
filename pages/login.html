@@ -35,18 +35,18 @@
         <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
       </ul>
       <ul id="nav-mobile-cart" class="right">
-        <li><a id="cart-btn"><i class="material-icons">shopping_cart</i></a></li>
+        <!-- hidden on mobile and when cart is empty -->
+        <li><a id="cart-btn"><i class="material-icons">shopping_cart</i><span class="new badge primary-bg-white secondary-textcolor primary-hoverable-bg hide-on-small-only" data-badge-caption="">2</span></a></li>
       </ul>
       <ul id="nav-mobile-login" class="right hide-on-med-and-down">
-        <li><a href="./login.html"><i class="material-icons white-textcolor">person</i>Konto</a></li>
+        <li><a href="./login.html"><i class="material-icons white-textcolor">person</i>Anmelden</a></li>
       </ul>
 
       <ul class="side-nav" id="mobile-demo">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./product-overview.html">Produkte</a></li>
         <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
-        <hr class="fullWidth">
-        <li><a href="./login.html">Konto</a></li>
+        <li><a href="./login.html">Anmelden</a></li>
       </ul>
     </div>
   </nav>
@@ -122,10 +122,9 @@
                       </div>
                     </div>
                     <div class="row">
-                      <a href="./customer-account.html" class="btn waves-effect waves-light primary-btn col s12 m4 offset-m4" type="submit" name="action">
-                            Anmelden
-                            <i class="fa fa-sign-in right-btn-icon" aria-hidden="true"></i>
-                    </a>
+                      <div class="col s12 m4 offset-m4 btn_group">
+                        <a href="./customer-account.html" class="btn waves-effect waves-light primary-btn" type="submit" name="action">Anmelden<i class="fa fa-sign-in right-btn-icon" aria-hidden="true"></i></a>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -177,9 +176,7 @@
                         <input required id="password" type="password" class="validate">
                         <label for="password">Passwort</label>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="switch">
+                      <div class="switch col s12">
                         <p>
                           <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
                           <label for="filled-in-box">Newsletter abbonieren</label>
@@ -187,10 +184,9 @@
                       </div>
                     </div>
                     <div class="row">
-                      <button class="btn waves-effect waves-light primary-btn col s12 m4 offset-m4" type="submit" name="action">
-                            Registrieren
-                            <i class="fa fa-sign-in right-btn-icon" aria-hidden="true"></i>
-                    </button>
+                      <div class="btn_group col s12 m4 offset-m4">
+                        <button class="btn waves-effect waves-light primary-btn" type="submit" name="action">Registrieren<i class="fa fa-sign-in right-btn-icon" aria-hidden="true"></i></button>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -216,10 +212,9 @@
                       </div>
                     </div>
                     <div class="row">
-                      <button class="btn waves-effect waves-light primary-btn col s12 m4 offset-m4" type="submit" name="action">
-                          Zur&uuml;cksetzen
-                          <i class="fa fa-sign-in right-btn-icon" aria-hidden="true"></i>
-                  </button>
+                      <div class="col s12 m4 offset-m4 btn_group">
+                        <button class="btn waves-effect waves-light primary-btn col s12 m4 offset-m4" type="submit" name="action">Zur&uuml;cksetzen<i class="fa fa-sign-in right-btn-icon" aria-hidden="true"></i></button>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -267,8 +262,8 @@
     <div class="footer-copyright">
       <div class="container">
         <div class="row no-margin center-align">
-            <span class="col s6">© 2018 Copyright Cup Society</span>
-            <span class="col s6">Made with <i style="color:#ed4956" class="fa fa-heart" aria-hidden="true"></i> in Germany</span>
+          <span class="col s6">© 2018 Copyright Cup Society</span>
+          <span class="col s6">Made with <i style="color:#ed4956" class="fa fa-heart" aria-hidden="true"></i> in Germany</span>
         </div>
       </div>
     </div>
