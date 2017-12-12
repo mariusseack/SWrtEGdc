@@ -264,6 +264,11 @@ nav ul a:hover {
 
 nav ul a {
   text-transform: uppercase;
+  display: flex;
+}
+
+nav ul a i{
+  margin-right: 5px;
 }
 
 .brand-logo {
