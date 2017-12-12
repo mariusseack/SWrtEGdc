@@ -18,6 +18,10 @@ body {
   background-color: #004225 !important;
 }
 
+.secondary-bg-green{
+  background-color: #00864b !important;
+}
+
 .primary-bg-white {
   background-color: #fefefe !important;
 }
@@ -38,7 +42,14 @@ body {
 
 .primary-btn:hover, .primary-btn:focus, .primary-btn:active {
   background-color: #00864b !important;
+  transition: background-color .2s;
 }
+
+ a:hover .primary-hoverable-bg{
+   color: #fefefe !important;
+   background-color: #00864b !important;
+   transition: background-color .2s;
+ }
 
 .primary-hoverable:hover{
   color: #00864b !important;
@@ -262,13 +273,23 @@ nav ul a:hover {
   background: none;
 }
 
+.side-nav li>a:hover{
+  background: none;
+}
+
 nav ul a {
   text-transform: uppercase;
   display: flex;
+  align-items: center;
 }
 
 nav ul a i{
   margin-right: 5px;
+}
+
+#cart-btn>span.badge{
+  min-width: 2rem;
+  margin-left: 0;
 }
 
 .brand-logo {
@@ -553,12 +574,16 @@ body>nav, body>section {
   transition: top 300ms ease-in-out;
 }
 
-.product-information:hover {
+.product-element>.product-information:hover {
   -webkit-transition: top 300ms ease-in-out;
   -moz-transition: top 300ms ease-in-out;
   -o-transition: top 300ms ease-in-out;
   transition: top 300ms ease-in-out;
   top: -40px;
+}
+
+.product-element>.product-information>.product-element-heading{
+  font-size: 2rem;
 }
 
 .product-element-show {

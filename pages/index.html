@@ -23,7 +23,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="fixed inverse">
+  <nav class="fixed transparent">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">
             <img alt="cup society logo" src="../assets/images/logo-white.png">
@@ -34,19 +34,18 @@
         <li><a href="./product-overview.html">Produkte</a></li>
         <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
       </ul>
-      <ul id="nav-mobile-cart" class="right">
-        <li><a id="cart-btn"><i class="material-icons">shopping_cart</i></a></li>
+      <ul id="nav-mobile-cart" class="right">                            <!-- hidden on mobile and when cart is empty -->
+        <li><a id="cart-btn"><i class="material-icons">shopping_cart</i><span class="new badge primary-bg-white secondary-textcolor primary-hoverable-bg hide-on-small-only" data-badge-caption="">1</span></a></li>
       </ul>
       <ul id="nav-mobile-login" class="right hide-on-med-and-down">
-        <li><a href="./login.html"><i class="material-icons white-textcolor">person</i>Konto</a></li>
+        <li><a href="./login.html"><i class="material-icons white-textcolor">person</i>Anmelden</a></li>
       </ul>
 
       <ul class="side-nav" id="mobile-demo">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./product-overview.html">Produkte</a></li>
         <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
-        <hr class="fullWidth">
-        <li><a href="./login.html">Konto</a></li>
+        <li><a href="./login.html">Anmelden</a></li>
       </ul>
     </div>
   </nav>
@@ -59,6 +58,11 @@
       <a id="close-cart-btn"><i class="material-icons secondary-textcolor">close</i></a>
     </div>
     <div class="cart-element-wrapper">
+      <!-- when cart is empty show the following and hide all cart-elements -->
+      <div class="hide">
+        <p>Dein Warenkorb ist leer, zeit das zu &auml;ndern.</p>
+        <a class="btn waves-effect primary-btn">Entdecke unsere Produkte</a>
+      </div>
 
       <!-- cart-element -->
       <div class="cart-element hoverable z-depth-2 secondary-textcolor">
@@ -143,8 +147,8 @@
       </div>
 
       <div class="row">
-        <!-- product -->
-        <div class="product-wrapper col s12 m6 scroll-fade">
+        <!-- Green Label -->
+        <div class="product-wrapper col s12 m6 l6 xl4 scroll-fade">
           <div class="product-element">
             <div class="slideshow-wrapper">
               <img src="../assets/images/home-testproduct.jpg" class="img z-depth-5" alt="">
@@ -152,24 +156,49 @@
               <img src="../assets/images/home-testproduct-3.jpg" class="img z-depth-5" alt="">
             </div>
             <div class="product-information z-depth-3">
-              <p class="product-element-preheading">Green Label</p>
-              <h4 class="product-element-heading">Zitrone & Ingwer</h4>
+              <p class="product-element-preheading">Premium Tee, Biozertifiziert</p>
+              <h4 class="product-element-heading">Green Label</h4>
               <p class="product-element-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
               <div class="divider"></div>
               <p class="product-element-interactiongroup">
-                <span class="product-element-price left-align">9.99 &euro;</span>
+                <span class="product-element-price left-align">ab 7.99 &euro;</span>
                 <span class="right">
                   <span class="product-element-show tooltip"><i class="material-icons pointer primary-hoverable">remove_red_eye</i><span class="tooltiptext">Produkt ansehen</span></span>
-                  <span class="product-element-addtocart tooltip"><i class="material-icons pointer primary-hoverable">shopping_cart</i><span class="tooltiptext">In den Warenkorb</span></span>
+                <span class="product-element-addtocart tooltip"><i class="material-icons pointer primary-hoverable">shopping_cart</i><span class="tooltiptext">In den Warenkorb</span></span>
                 </span>
               </p>
             </div>
           </div>
         </div>
-        <!-- !Product -->
+        <!-- !Green Label -->
 
-        <!-- product -->
-        <div class="product-wrapper col s12 m6 scroll-fade">
+        <!-- Black Label -->
+        <div class="product-wrapper col s12 m6 l6 xl4 scroll-fade">
+          <div class="product-element">
+            <div class="slideshow-wrapper">
+              <img src="../assets/images/home-testproduct.jpg" class="img z-depth-5" alt="">
+              <img src="../assets/images/home-testproduct-2.jpg" class="img z-depth-5" alt="">
+              <img src="../assets/images/home-testproduct-3.jpg" class="img z-depth-5" alt="">
+            </div>
+            <div class="product-information z-depth-3">
+              <p class="product-element-preheading">Premium Tee, Biozertifiziert</p>
+              <h4 class="product-element-heading">Black Label</h4>
+              <p class="product-element-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+              <div class="divider"></div>
+              <p class="product-element-interactiongroup">
+                <span class="product-element-price left-align">ab 7.99 &euro;</span>
+                <span class="right">
+                  <span class="product-element-show tooltip"><i class="material-icons pointer primary-hoverable">remove_red_eye</i><span class="tooltiptext">Produkt ansehen</span></span>
+                <span class="product-element-addtocart tooltip"><i class="material-icons pointer primary-hoverable">shopping_cart</i><span class="tooltiptext">In den Warenkorb</span></span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- !Black Label -->
+
+        <!-- Accessories -->
+        <div class="product-wrapper col s12 m6 l6 xl4 scroll-fade">
           <div class="product-element">
             <div class="slideshow-wrapper">
               <img src="../assets/images/home-testproduct.jpg" class="z-depth-5 img" alt="">
@@ -177,21 +206,21 @@
               <img src="../assets/images/home-testproduct-3.jpg" class="z-depth-5 img" alt="">
             </div>
             <div class="product-information z-depth-3">
-              <p class="product-element-preheading">Green Label</p>
-              <h4 class="product-element-heading">Zitrone & Ingwer</h4>
+              <p class="product-element-preheading">Exklusiv & Hochwertig</p>
+              <h4 class="product-element-heading">Zubeh&ouml;r</h4>
               <p class="product-element-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
               <div class="divider"></div>
               <p class="product-element-interactiongroup">
-                <span class="product-element-price left-align">9.99 &euro;</span>
+                <span class="product-element-price left-align">ab 29.99 &euro;</span>
                 <span class="right">
                   <span class="product-element-show tooltip"><i class="material-icons pointer primary-hoverable">remove_red_eye</i><span class="tooltiptext">Produkt ansehen</span></span>
-                  <span class="product-element-addtocart tooltip"><i class="material-icons pointer primary-hoverable">shopping_cart</i><span class="tooltiptext">In den Warenkorb</span></span>
+                <span class="product-element-addtocart tooltip"><i class="material-icons pointer primary-hoverable">shopping_cart</i><span class="tooltiptext">In den Warenkorb</span></span>
                 </span>
               </p>
             </div>
           </div>
         </div>
-        <!-- !Product -->
+        <!-- !Accessories -->
       </div>
     </div>
   </section>
@@ -216,7 +245,7 @@
       <div class="row">
         <div class="col s12 center-align section-heading scroll-fade">
           <h2>join the society</h2>
-          <p>Trage dich jetzt ein und erhalte die neusten Informationen</p>
+          <p>Melde dich jetzt an und erhalte die neusten Informationen</p>
         </div>
       </div>
       <div class="row scroll-fade">
@@ -256,6 +285,7 @@
       </div>
 
       <div class="row scroll-fade">
+        <!-- load instagram app if available, otherwise open web instagram (@cupsocietyde) -->
         <div id="instafeed" class="home-social-post-wrapper col s12"></div>
       </div>
 
@@ -317,8 +347,8 @@
     <div class="footer-copyright">
       <div class="container">
         <div class="row no-margin center-align">
-            <span class="col s6">© 2018 Copyright Cup Society</span>
-            <span class="col s6">Made with <i style="color:#ed4956" class="fa fa-heart" aria-hidden="true"></i> in Germany</span>
+          <span class="col s6">© 2018 Copyright Cup Society</span>
+          <span class="col s6">Made with <i style="color:#ed4956" class="fa fa-heart" aria-hidden="true"></i> in Germany</span>
         </div>
       </div>
     </div>
