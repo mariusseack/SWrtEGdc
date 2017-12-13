@@ -138,6 +138,10 @@ a, .btn, .pointer {
   width: 100%;
 }
 
+.fixed{
+  position: fixed;
+}
+
 img {
   pointer-events: none;
 }

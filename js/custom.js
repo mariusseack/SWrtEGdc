@@ -2,10 +2,8 @@ var nav = $("nav");
 var ph_container = $('.parallax-container .heading-container');
 var para_element = ph_container.children();
 var ele_offset = para_element.offset().top - para_element.height();
-var puffer = 10;    //amount (in pixel) of puffer the element can scroll above top
+var puffer = 130;    //amount (in pixel) of puffer the element can scroll above top
 var max_offset = ele_offset + puffer;
-
-console.log(ph_container);
 
 $(document).ready(function() {
   $(".button-collapse").sideNav();
@@ -34,7 +32,7 @@ $(document).scroll(function() {
     para_element.css({"opacity": res});
   }
 
-  console.log(res);
+  console.log(para_element.css('top'));
 
 });
 
