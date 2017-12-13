@@ -14,7 +14,7 @@ body {
   color: #111 !important;
 }
 
-.primary-bg-green {
+.primary-bg {
   background-color: #004225 !important;
 }
 
@@ -421,6 +421,7 @@ body.open-cart>.cart-container {
   z-index: 1000;
   opacity: 0;
   display: none;
+  background-color: #004225;
 }
 
 body.open-cart>.open-cart-overlay {
