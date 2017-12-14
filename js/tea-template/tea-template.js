@@ -2,12 +2,16 @@ var para_element;
 var ele_offset;
 var puffer;
 var max_offset;
+var main_productcontainer;
 
 $(document).ready(function() {
-  var para_element = $('.parallax-container .heading-container').children();
-  var ele_offset = para_element.offset().top - para_element.height();
-  var puffer = 150; //amount (in pixel) of puffer the element can scroll above top
-  var max_offset = ele_offset + puffer;
+  para_element = $('.parallax-container .heading-container').children();
+  ele_offset = para_element.offset().top - para_element.height();
+  puffer = 150; //amount (in pixel) of puffer the element can scroll above top
+  max_offset = ele_offset + puffer;
+
+  main_productcontainer = $(".main-productpicture-wrapper");
+
 
   $(document).scroll(function() {
     //parallax custom scrolleffect
@@ -28,4 +32,15 @@ $(document).ready(function() {
 
     }
   });
+
+  $(".inline-productpicture-wrapper .image-element").click(function() {
+    var image_ele = $(this).children('img');
+    var image_src = image_ele.attr('src');
+    var main_image = main_productcontainer.children('img');
+    var main_image_src = main_image.attr('src');
+
+    main_image.attr('src',image_src);
+    image_ele.attr('src',main_image_src);
+  });
+
 });

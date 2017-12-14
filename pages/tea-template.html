@@ -109,9 +109,77 @@
     </div>
   </section>
 
-  <section class="content-section-inner tea-template product-overview">
-
+  <!-- Buy-section -->
+  <section class="content-section-inner tea-template">
+    <div class="product-overview row">
+      <div class="product-picture-wrapper col s12 m6 l6 xl6">
+        <div class="main-productpicture-wrapper">
+          <img src="../assets/images/main-test-product-img.png" alt="productname" class="main-productpicture">
+        </div>
+        <div class="inline-productpicture-wrapper">
+          <div class="image-element">
+            <img src="../assets/images/test-product-img.png" alt="productname" class="inline-productpicture">
+          </div>
+          <div class="image-element">
+            <img src="../assets/images/test-product-img-2.png" alt="productname" class="inline-productpicture">
+          </div>
+          <div class="image-element">
+            <img src="../assets/images/test-product-img-3.png" alt="productname" class="inline-productpicture">
+          </div>
+          <div class="image-element">
+            <img src="../assets/images/test-product-img-4.png" alt="productname" class="inline-productpicture">
+          </div>
+        </div>
+      </div>
+      <div class="productinformation-wrapper col s12 m6 l6 xl6 right">
+        <p class="subheading no-margin">Black Label</p>
+        <h4 class="heading">Irish Bergamotte</h4>
+        <p class="productdescription">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+        <p class="price">9,99 &euro;</p>
+        <!-- Preis aendern, wenn eine andere Option gewahlt wird -->
+        <form id="AddToCartForm" action="" method="post">
+          <div class="input-field">
+            <select>
+              <option value="dose" selected>75g Dose - 9,99&euro;</option>
+              <option value="beutel">75g Beutel - 6,99&euro;</option>
+              <option value="bundle">Bundle - 39,99&euro;</option>
+            </select>
+            <label>W&auml;hle ene Variante</label>
+          </div>
+          <button type="submit" class="btn primary-btn-black" name="add" id="AddToCart">In den Warenkorb</button>
+        </form>
+      </div>
+    </div>
   </section>
+  <!-- Buy-section -->
+
+  <!-- Informationsection -->
+  <section class="content-section-outer tea-template info-section">
+    <div class="container">
+      <div class="info-wrapper white-text">
+        <div class="main-description">
+          <h4>Main Heading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="content-box-wrapper row">
+          <div class="content-box col xl6 l6 s12">
+            <h4>Content One</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="content-box col xl6 l6 s12">
+            <h4>Content Two</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Informationsection -->
+
   <!-- !CONTENT -->
 
   <!-- FOOTER -->
@@ -164,6 +232,7 @@
   <script type="text/javascript" src="../js/reveal-custom.js"></script>
   <script type="text/javascript" src="../js/cart.js"></script>
   <script type="text/javascript" src="../js/custom.js"></script>
+  <script type="text/javascript" src="../js/tea-template/tea-template.js"></script>
 </body>
 
 </html>

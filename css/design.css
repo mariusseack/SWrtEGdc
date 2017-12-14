@@ -10,12 +10,24 @@ body {
   color: #004225 !important;
 }
 
+.primary-textcolor-white {
+  color: #fefefe !important;
+}
+
 .secondary-textcolor {
   color: #111 !important;
 }
 
 .primary-bg {
   background-color: #004225 !important;
+}
+
+.btn.primary-bg:hover{
+  background-color: #00864b !important;
+}
+
+.primary-bg-black{
+  background-color: #111 !important;
 }
 
 .secondary-bg-green{
@@ -31,6 +43,15 @@ body {
   color: #fff !important;
 }
 
+.primary-btn-black, .primary-container-black {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+.primary-btn-black:hover{
+  box-shadow: 0px 0px 0px 2px #fefefe, 0px 0px 0px 4px #111;
+}
+
 .transparent-btn {
   background-color: transparent;
   border: solid white 1px;
@@ -41,8 +62,8 @@ body {
 }
 
 .primary-btn:hover, .primary-btn:focus, .primary-btn:active {
-  background-color: #00864b !important;
-  transition: background-color .2s;
+
+  box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #00864b;
 }
 
  a:hover .primary-hoverable-bg{
@@ -152,6 +173,14 @@ img.img {
   max-width: 100%;
   height: auto;
   max-height: 100%;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after{
+  border: 2px solid #111;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after{
+  background-color: #111;
 }
 
 .content-section-inner {

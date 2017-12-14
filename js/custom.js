@@ -5,6 +5,7 @@ $(document).ready(function() {
   $('.collapsible').collapsible();
   $('.tap-target').tapTarget('close');
   $('.parallax').parallax();
+  $('select').material_select();
 
   $(document).scroll(function() {
     if ($(this).scrollTop() > 0 && !nav.hasClass("inverse")) {
