@@ -88,7 +88,7 @@
 
     <hr class="fullWidth">
     <p class="cart-sum h4 primary-textcolor">Summe:<span class="right">9,99 &euro;</span></p>
-    <a class="btn waves-effect primary-btn-black btn-large rounded-btn">Zur Kasse</a>
+    <a class="btn waves-effect primary-btn btn-large rounded-btn">Zur Kasse</a>
 
   </div>
 
@@ -97,12 +97,12 @@
 
   <!-- CONTENT -->
 
-  <section class="tea-template template-header">
+  <section class="tea-template header">
     <div class="parallax-container">
       <div class="parallax"><img src="../assets/images/quote-bg.png"></div>
       <div class="heading-container">
         <div class="fixed">
-          <h1 class="scroll-fade">Black Label</h1>
+          <h1 class="scroll-fade">Teeflasche</h1>
           <p class="center-align scroll-fade">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
         </div>
       </div>
@@ -132,18 +132,19 @@
         </div>
       </div>
       <div class="productinformation-wrapper col s12 m6 l6 xl6 right">
-        <p class="subheading no-margin">Black Label</p>
-        <h4 class="heading">Irish Bergamotte</h4>
+        <p class="subheading no-margin">Accessoires</p>
+        <h4 class="heading">Teeflasche mit Infusor</h4>
         <p class="productdescription">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-        <p class="productdescription">Unser Tip: Den Tee kann man ohne Probleme ein zweites Mal aufbr&uuml;hen ohne dass er an Geschmack verliert.</p>
-        <p class="price">9,99 &euro;<span class="bio right"><img src="../assets/images/bio-siegel.svg" alt="bio-siegel"></span></p>
+        <p class="price">29,99 &euro;</p>
         <!-- Preis aendern, wenn eine andere Option gewahlt wird -->
         <form id="AddToCartForm" action="" method="post">
-          <div class="input-field">
+          <div class="input-field col s12">
             <select>
-              <option value="dose" selected>75g Dose - 9,99&euro;</option>
-              <option value="beutel">75g Beutel - 6,99&euro;</option>
-              <option value="bundle">Bundle - 39,99&euro;</option>
+              <option value="single" selected>Einzelnd</option>
+              <optgroup label="Bundle">
+                <option value="green">+Green Label (75g) - 39,98 &euro;</option>
+                <option value="black">+Black Label (75g) - 39,98 &euro;</option>
+              </optgroup>
             </select>
             <label>W&auml;hle ene Variante</label>
           </div>
@@ -182,66 +183,32 @@
   </section>
   <!-- Informationsection -->
 
-  <!-- Ingredientsection -->
-  <section class="content-section-outer tea-template info-section no-cart-resize">
+  <!-- Preparationvideosection -->
+  <section class="content-section-outer tea-template no-cart-resize">
     <div class="container">
-      <div class="info-wrapper white-text">
-        <div class="main-description scroll-fade">
-          <h4 class="no-margin">Main Heading</h4>
+      <div class="row">
+        <div class="col s12 center-align section-heading scroll-fade">
+          <h2>Zubereitung</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
-        <div class="content-box-wrapper row">
-          <div class="content-box col xl4 l12 s12 scroll-fade">
-            <h4><div class="icon"></div>Content One</h4>
-            <!-- icon ueber customize laden (shopify) -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="content-box col xl4 l12 s12 scroll-fade">
-            <h4><div class="icon"></div>Content Two</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="content-box col xl4 l12 s12 scroll-fade">
-            <h4><div class="icon"></div>Content One</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
+      </div>
+      <div class="row">
+        <div class="video-wrapper col xl12">
+          <video class="fullWidth scroll-fade" src="../assets/video/home-rolex.mp4" controls></video>
         </div>
       </div>
     </div>
   </section>
-  <!-- Ingredientsection -->
-
-  <!-- Preparationsection -->
-  <section class="content-section-outer tea-template preparationsection no-cart-resize">
-    <div class="container">
-      <div class="preparation-wrapper scroll-fade row fullWidth center-align">
-        <div class="preparation-element col s4">
-          <i class="fa fa-clock-o fa-4x" aria-hidden="true"></i>
-          <p>2-4 min</p>
-        </div>
-        <div class="preparation-element col s4">
-          <i class="fa fa-thermometer-three-quarters fa-4x" aria-hidden="true"></i>
-          <p>70 &deg;C</p>
-        </div>
-        <div class="preparation-element col s4">
-          <i class="fa fa-spoon fa-4x" aria-hidden="true"></i>
-          <p>2-4g (250ml)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Preparationsection -->
+  <!-- Preparationvideosection -->
 
   <!-- Support -->
   <div class="hide-on-med-and-down support">
     <!-- Element Showed -->
     <div class="fixed-action-btn">
-      <a id="menu" class="btn btn-floating btn-large primary-bg-black" onclick="$('.tap-target').tapTarget('open');"><i class="material-icons">question_answer</i></a>
+      <a id="menu" class="btn btn-floating btn-large primary-bg" onclick="$('.tap-target').tapTarget('open');"><i class="material-icons">question_answer</i></a>
     </div>
-
     <!-- Tap Target Structure -->
-    <div class="tap-target primary-container-black" data-activates="menu">
+    <div class="tap-target primary-container" data-activates="menu">
       <div class="tap-target-content">
         <h5>Sie haben Fragen?</h5>
         <p>Kontaktieren Sie und einfach &uuml;ber support@cupsociety.de<br><br>Ihr Cup Society Team</p>

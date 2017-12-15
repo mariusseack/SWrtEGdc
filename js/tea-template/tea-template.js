@@ -1,18 +1,13 @@
-var para_element;
-var ele_offset;
-var puffer;
-var max_offset;
-var main_productcontainer;
-
 $(document).ready(function() {
-  para_element = $('.parallax-container .heading-container').children();
-  ele_offset = para_element.offset().top - para_element.height();
-  puffer = 150; //amount (in pixel) of puffer the element can scroll above top
-  max_offset = ele_offset + puffer;
+  checkTemplateheaderVisiblility();
 
-  main_productcontainer = $(".main-productpicture-wrapper");
+  var para_element = $('.parallax-container .heading-container').children();
+  var ele_offset = para_element.offset().top - para_element.height();
+  var puffer = 150; //amount (in pixel) of puffer the element can scroll above top
+  var max_offset = ele_offset + puffer;
 
-
+  var main_productcontainer = $(".main-productpicture-wrapper");
+  
   $(document).scroll(function() {
     //parallax custom scrolleffect
     var scroll_offset = $(window).scrollTop();
@@ -29,8 +24,10 @@ $(document).ready(function() {
           "opacity": res
         });
       }
-
     }
+
+    checkTemplateheaderVisiblility();
+
   });
 
   $(".inline-productpicture-wrapper .image-element").click(function() {
@@ -44,3 +41,15 @@ $(document).ready(function() {
   });
 
 });
+
+function checkTemplateheaderVisiblility(){
+  var template_header = $('section.template-header');
+  var scrollTop = $(window).scrollTop();
+
+  if(template_header.height() < scrollTop){
+    template_header.children().children('.heading-container').fadeOut();
+  }
+  else {
+    template_header.children().children('.heading-container').fadeIn();
+  }
+}
