@@ -1,5 +1,5 @@
-.open-cart-overlay {
-  background-color: black;
+.cart-heading,.cart-sum{
+  color: black !important;
 }
 
 .parallax-container {
@@ -17,7 +17,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.parallax-container>.heading-container * {
+.parallax-container>.heading-container{
   color: #fefefe;
 }
 
@@ -26,7 +26,7 @@
   z-index: 0;
 }
 
-.parallax-container>.heading-container h1 {
+.parallax-container>.heading-container .heading {
   width: 100%;
   margin: 0;
   text-align: center;

@@ -497,11 +497,11 @@ body.open-cart>.cart-container {
   z-index: 1000;
   opacity: 0;
   display: none;
-  background-color: #004225;
+  background-color: black;
 }
 
 body.open-cart>.open-cart-overlay {
-  opacity: .9;
+  opacity: .6;
   display: block;
   top: 0;
   z-index: 1000;
