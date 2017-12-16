@@ -51,10 +51,16 @@ section.tea-template, footer {
   z-index: 1;
 }
 
-section.tea-template.info-section {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, .8) 60%, #fefefe), url('../assets/images/content-section-bg.jpg') center center;
-  background: -o-linear-gradient(rgba(0, 0, 0, .8) 60%, #fefefe), url('../assets/images/content-section-bg.jpg') center center;
-  background: linear-gradient(rgba(0, 0, 0, .8) 60%, #fefefe), url('../assets/images/content-section-bg.jpg') center center;
+section.tea-template.info-section.black-section {
+  background:  url('../assets/images/content-section-bg.jpg') center center;
+  background:  url('../assets/images/content-section-bg.jpg') center center;
+  background:  url('../assets/images/content-section-bg.jpg') center center;
+}
+
+section.tea-template.info-section.green-section {
+  background:  url('../assets/images/tea-template-sectionbg.jpg') top center;
+  background: url('../assets/images/tea-template-sectionbg.jpg') top center;
+  background:  url('../assets/images/tea-template-sectionbg.jpg') top center;
 }
 
 /*  Product-overview*/
