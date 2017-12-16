@@ -52,15 +52,15 @@ section.tea-template, footer {
 }
 
 section.tea-template.info-section.black-section {
-  background:  url('../assets/images/content-section-bg.jpg') center center;
-  background:  url('../assets/images/content-section-bg.jpg') center center;
-  background:  url('../assets/images/content-section-bg.jpg') center center;
+  background:  url('../assets/images/tea-template-infosection-black.jpg') bottom center;
+  background:  url('../assets/images/tea-template-infosection-black.jpg') bottom center;
+  background:  url('../assets/images/tea-template-infosection-black.jpg') bottom center;
 }
 
 section.tea-template.info-section.green-section {
-  background:  url('../assets/images/tea-template-sectionbg.jpg') top center;
-  background: url('../assets/images/tea-template-sectionbg.jpg') top center;
-  background:  url('../assets/images/tea-template-sectionbg.jpg') top center;
+  background:  url('../assets/images/tea-template-infosection-green.jpg') bottom center;
+  background: url('../assets/images/tea-template-infosection-green.jpg') bottom center;
+  background:  url('../assets/images/tea-template-infosection-green.jpg') bottom center;
 }
 
 /*  Product-overview*/
@@ -161,8 +161,17 @@ section.tea-template.info-section.green-section {
   letter-spacing: .75rem;
 }
 
-.tea-template>.container>.info-wrapper h4 {
+.tea-template.black-section>.container>.info-wrapper h4 {
   background-color: black;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.5rem;
+  padding: 2.5rem 2rem;
+  text-transform: uppercase;
+}
+
+.tea-template.green-section>.container>.info-wrapper h4 {
+  background-color: rgb(4, 37, 14);
   text-align: center;
   color: white;
   letter-spacing: 0.5rem;
@@ -183,9 +192,17 @@ section.tea-template.info-section.green-section {
   background: url('../assets/images/test-icon.png') no-repeat;
 }
 
-.tea-template>.container>.info-wrapper p {
+.tea-template.black-section>.container>.info-wrapper p {
   text-align: justify;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.tea-template.green-section>.container>.info-wrapper p {
+  text-align: justify;
+  background-color: rgba(0, 66, 37, .9);
   padding: 2rem;
   font-size: 1.25rem;
   line-height: 1.3;
