@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Icon Font-->
+  <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="../css/design.css" media="screen,projection" />
+
+  <!--Import fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Cup Society - Onlineshop für Premium Tee aus Deutschland aus kontrolliert biologischem Anbau">
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="fixed transparent">   <!-- transparent just on index, otherwise inverse -->
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">
+            <img alt="cup society logo" src="../assets/images/logo-white.png">
+          </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile-pagelinks" class="left hide-on-med-and-down">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product-overview.html">Produkte</a></li>
+        <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
+      </ul>
+      <ul id="nav-mobile-cart" class="right">
+        <!-- hidden on mobile and when cart is empty -->
+        <li><a id="cart-btn"><i class="material-icons">shopping_cart</i><span class="new badge primary-bg-white secondary-textcolor primary-hoverable-bg hide-on-small-only" data-badge-caption="">2</span></a></li>
+      </ul>
+      <ul id="nav-mobile-login" class="right hide-on-med-and-down">
+        <li><a href="./login.html"><i class="material-icons white-textcolor">person</i>Anmelden</a></li>
+      </ul>
+
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product-overview.html">Produkte</a></li>
+        <li><a href="./about-us.html">&Uuml;ber Uns</a></li>
+        <li><a href="./login.html">Anmelden</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- !NAVBAR -->
+
+  <!-- CART -->
+  <div class="cart-container primary-bg-white fixed right">
+    <div class="cart-container-header">
+      <h4 class="cart-heading h4 primary-textcolor">Warenkorb</h4>
+      <a id="close-cart-btn"><i class="material-icons secondary-textcolor">close</i></a>
+    </div>
+    <div class="cart-element-wrapper">
+      <!-- when cart is empty show the following and hide all cart-elements -->
+      <div class="hide">
+        <p>Dein Warenkorb ist leer, zeit das zu &auml;ndern.</p>
+        <a class="btn waves-effect primary-btn">Entdecke unsere Produkte</a>
+      </div>
+
+      <!-- cart-element -->
+      <div class="cart-element hoverable z-depth-2 secondary-textcolor">
+        <img class="cart-productimg" src="../assets/images/test-product-img.png" alt="produktbild">
+        <p class="cart-product-description secondary-textcolor">
+          <span class="cart-amount-description">1x</span>
+          <span class="cart-name-description">Green Label - Zitrone & Ingwer</span>
+        </p>
+        <p class="cart-price center-align">9,99 &euro;</p>
+        <i class="delete-cartitem material-icons secondary-textcolor pointer">close</i>
+      </div>
+      <!-- /cart-element -->
+
+      <!-- cart-element -->
+      <div class="cart-element hoverable z-depth-2 black-text">
+        <img class="cart-productimg" src="../assets/images/test-product-img.png" alt="produktbild">
+        <p class="cart-product-description secondary-textcolor">
+          <span class="cart-amount-description">1x</span>
+          <span class="cart-name-description">Green Label - Zitrone & Ingwer</span>
+        </p>
+        <p class="cart-price center-align">9,99 &euro;</p>
+        <i class="delete-cartitem material-icons secondary-textcolor pointer">close</i>
+      </div>
+      <!-- /cart-element -->
+    </div>
+
+    <hr class="fullWidth">
+    <p class="cart-sum h4 primary-textcolor">Summe:<span class="right">9,99 &euro;</span></p>
+    <a class="btn waves-effect primary-btn btn-large rounded-btn">Zur Kasse</a>
+
+  </div>
+
+  <div class="open-cart-overlay primary-bg-green"></div>
+  <!-- !CART -->
